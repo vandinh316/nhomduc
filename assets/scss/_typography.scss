@@ -1,0 +1,122 @@
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: $font--body;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: $gutter;
+    padding-right: $gutter;
+
+    @media (min-width: $xl) {
+        padding-left: $gutter--xl;
+        padding-right: $gutter--xl;
+    }
+
+    @media (min-width: $xl) {
+        padding-left: $gutter--xxl;
+        padding-right: $gutter--xxl;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.f {
+    display: flex;
+}
+
+.fw {
+    flex-wrap: wrap;
+}
+
+.aic {
+    align-items: center;
+}
+
+.aie {
+    align-items: flex-end;
+}
+
+.ais {
+    align-items: flex-start;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jce {
+    justify-content: flex-end;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.jcs {
+    justify-content: flex-start;
+}
+
+.jca {
+    justify-content: space-around;
+}
+
+.fdc {
+    flex-direction: column;
+}
+
+.fdr {
+    flex-direction: row;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+.link {
+    position: relative;
+    margin-right: 5px;
+    font-weight: bold;
+    color: $white;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: $white;
+
+        transition: all 0.25s ease-in-out;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+.link--black {
+    color: $black;
+
+    &::after {
+        background-color: $black;
+    }
+}

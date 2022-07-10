@@ -1,0 +1,46 @@
+.header__top {
+    padding: 10px 0;
+    color: $white;
+    background-color: $color-main;
+    
+    .container {
+        justify-content: space-between;
+    }
+
+    .fas {
+        margin-right: 5px;
+    }
+}
+
+.header__top-link {
+    color: $color-link;
+    text-decoration: none;
+}
+
+.header__content {
+    padding: 10px 0;
+    
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header__logo {
+    max-width: 240px;
+}
+
+.header__nav-lists {
+    @media (min-width: $l) {
+        display: flex;
+    }
+}
+
+.header__nav-item {
+    padding: 0 15px;
+
+    a {
+        color: $black;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,174 @@
+.footer {
+  position: relative;
+  color: $white;
+  background-color: $color-main;
+}
+
+.footer__top {
+  align-items: flex-start;
+  padding: 30px 0;
+  border-bottom: 1px solid $white;
+  
+  @media (min-width: $md) {
+    margin: 0 -15px;
+  }
+}
+
+.footer__top-col {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $md) {
+    justify-content: center;
+    width: calc(100% / 3);
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
+}
+
+.footer__top-col i {
+  font-size: 30px;
+}
+
+.footer__top-text {
+  padding-left: 15px;
+}
+
+.footer__top-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.footer__content {
+  position: relative;
+  z-index: 2;
+  padding: 30px 0;
+
+  @media (min-width: $md) {
+    margin: 0 -15px;
+  }
+}
+
+.footer__content-col {
+  width: 100%;
+  margin-bottom: 30px;
+  @media (min-width: $md) {
+    width: calc(100% / 3);
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
+}
+
+.footer__content-logo {
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+
+.footer__content-text {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__title {
+  position: relative;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 50px;
+    background: $white;
+  }
+}
+
+.footer__content-social a {
+  margin-right: 15px;
+  color: $white;
+  font-size: 16px;
+}
+.footer__content-social i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.facebook-bg {
+  background-color: $bg-facebook;
+}
+
+.twitter-bg {
+  background-color: $bg-twiter;
+}
+
+.google-bg {
+  background-color: $bg-google;
+}
+
+.footer-widget ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.footer-widget li {
+  width: 50%;
+  padding: 0 15px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.footer__content-subcribe {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__content-subcribe input {
+  width: 100%;
+  padding: 14px 28px;
+  border: 0;
+  color: $black;
+}
+
+.footer__content-subcribe button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 11px 20px;
+  border: 0;
+  background-color: $black;
+}
+
+.footer__content-subcribe button i {
+  color: $white;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  background: #202020;
+  padding: 15px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  color: $white;
+  text-align: center;
+}
